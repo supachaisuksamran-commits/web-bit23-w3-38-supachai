@@ -53,10 +53,45 @@
             border-radius:8px;
             border:2px solid #4aa8ff;
         }
+        .navbar{
+            background:#0b6fc2;
+            margin:-30px -30px 30px -30px;
+        }
+
+        .navbar ul{
+            list-style:none;
+            margin:0;
+            padding:0;
+            display:flex;
+            justify-content:center;
+        }
+
+        .navbar li{
+            margin:0;
+        }
+
+        .navbar a{
+            display:block;
+            padding:16px 30px;
+            color:white;
+            text-decoration:none;
+            font-size:16px;
+        }
+
+        .navbar a:hover{
+            background:#4aa8ff;
+        }
     </style>
 
 </head>
 <body>
+    <nav class="navbar">
+    <ul>
+        <li><a href="index.php">ประวัติ</a></li>
+        <li><a href="manage_order.php">แก้ไขการจอง</a></li>
+        <li><a href="room.php">ห้อง</a></li>
+    </ul>
+</nav>
 
 <?php
     include "action/connect.php";
@@ -93,5 +128,15 @@
 
 </table>
 <a href="index.php"> การจอง</a>
+<footer style="
+    margin-top:30px;
+    padding:20px;
+    background:#0b6fc2;
+    color:white;
+    text-align:center;
+    font-size:16px;
+">
+    ศุภชัย สุขสำราญ BIT.2/3 NO.38
+</footer>
 </body>
 </html>
